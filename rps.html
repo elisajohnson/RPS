@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+
+<style>
+h1 {
+	font-family: "Courier New";
+	font-size: 50px;
+	width: 576px;
+	background-color: white;
+	top: 198px;
+	left: 400px;
+	position: relative;
+	}
+
+body {
+	background-image: url("Rock-Paper-Scissors.jpg");
+}
+
+</style>
+
+</head>
+<body>
+<h1>Rock Paper Scissors</h1>
+
+
+<script .defer>
+	var randomNumber = Math.random();
+	var userInput = prompt("Rock, Paper or Scissors?");
+	var comp = "";
+
+
+	if (randomNumber < .99) {
+		comp = "rock";
+	}	
+	else if (randomNumber < .99 && randomNumber > .66){
+		comp = "paper";
+	}
+	else{
+		comp = "scissors";
+	}
+	
+
+
+	if (userInput == comp) {
+		alert("The game is tied!");
+	}
+	else if (userInput == "rock" && comp == "scissors"){
+		alert("You have won!");
+	}
+	else if (userInput == "rock" && comp == "paper"){
+		alert("Paper covers rock, you have lost!");
+	}
+	else if (userInput == "scissors" && comp == "paper"){
+		alert("You have won!");
+	}
+	else if (userInput == "scissors" && comp == "rock"){
+		alert("You have lost.");
+	}
+	else if (userInput == "paper" && comp == "scissors"){
+		alert("You have lost.");
+	}
+	else {
+		alert("You have won!");
+	}
+
+</script>
+
+
+
+</body>
+</html>
